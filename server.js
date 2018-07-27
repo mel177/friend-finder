@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json"}));
+app.use(express.static("./public"));
 
 
 
@@ -24,8 +25,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 // visit or request data from various URLs.
 // ==============================================================
 
-require("./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
+require("./routing/apiRoutes")(app);
+require("./routing/htmlRoutes")(app);
 
 
 
