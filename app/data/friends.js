@@ -16,12 +16,12 @@ var friends = [
     },
     {
        "name":"Colonel Paul",
-       "photo":"http://www.153aw.ang.af.mil/shared/media/bio/Colonel%20Paul%20Lyman.jpg",
+       "photo":"https://www.pexels.com/photo/adult-chill-computer-connection-450271/",
        "scores":[3,3,4,2,2,1,3,2,2,3]
     },
      {
         "name":"Edward Snowden",
-        "photo":"https://upload.wikimedia.org/wikipedia/commons/6/60/Edward_Snowden-2.jpg",
+        "photo":"https://www.pexels.com/photo/photo-of-a-man-listening-music-on-his-phone-846741/",
         "scores":[4,3,4,1,5,2,5,3,1,4]
      },
        {
