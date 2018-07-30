@@ -13,7 +13,7 @@ module.exports = function(app){
     app.post('/api/friends', function(req, res){
 
 
-        var bestMatch = {
+        var friendMatch = {
             name: "",
             photo: "",		
             friendDifference: 1000
@@ -40,22 +40,21 @@ module.exports = function(app){
 				totalDifference += Math.abs(parseInt(userScores[f]) - parseInt(friends[i].scores[f]));
 
 				// If the sum of differences is less then the differences of the current "best match"
-				if (totalDifference <= bestMatch.friendDifference){
+				if (totalDifference <= friendMatch.friendDifference){
 
-					// Reset the bestMatch to be the new friend. 
-					bestMatch.name = friends[i].name;
-					bestMatch.photo = friends[i].photo;
-					bestMatch.friendDifference = totalDifference;
+					// Reset the friendMatch to be the new friend. 
+					friendMatch.name = friends[i].name;
+					friendMatch.photo = friends[i].photo;
+					friendMatch.friendDifference = totalDifference;
 				}
 			}
 		}
 
-		// Finally save the user's data to the database (this has to happen AFTER the check. otherwise,
-		// the database will always return that the user is the user's best friend).
+		// save the user's data to the database happens AFTER the check.
 		friends.push(userData);
 
-		// Return a JSON with the user's bestMatch. This will be used by the HTML in the next page. 
-		res.json(bestMatch);
+		// Return a JSON with the user's bestMatch. 
+		res.json(friendMatch);
 
 	});
 
