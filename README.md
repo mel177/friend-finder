@@ -1,8 +1,34 @@
+
 # friend-finder
 
-Friend Finder - Node and Express Servers
-Overview
-In this activity, you'll build a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+friend-finder is a full-stack web application that serves as a simplified dating or friend-matching app. friend-finder uses Node.js and Express for its server-side code and Materialize for its front-end styling.
 
-You will use Express to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
+## [](https://github.com/mel177/friend-finder/blob/master/README.md#getting-started)Getting Started
 
+To deploy this application, clone the repository, run  `npm i`  and then run  `node server`  in the root directory to get it up and running on your localhost.
+
+### [](https://github.com/mel177/friend-finder/blob/master/README.md#prerequisites)Prerequisites
+
+The following Node modules must be installed for the application to run:
+
+```
+express
+body-parser
+
+```
+
+## [](https://github.com/mel177/friend-finder/blob/master/README.md#deployment)Deployment
+
+This application has been live deployed at  [[https://friend-finders-mm.herokuapp.com/](https://friend-finders-mm.herokuapp.com/)]
+
+## [](https://github.com/mel177/friend-finder/blob/master/README.md#built-with)Built With
+
+-   [Node.js](https://nodejs.org/en/)  - Backend JavaScript runtime
+-   [Express](https://expressjs.com/)  - Node.js web framework
+
+
+## [](https://github.com/mel177/friend-finder/blob/master/README.md#authors)Authors
+
+-   _Melinh Mai_  -  _Project Developer_
+
+> Written with  [StackEdit](https://stackedit.io/).
